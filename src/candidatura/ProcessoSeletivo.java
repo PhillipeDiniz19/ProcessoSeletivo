@@ -18,7 +18,7 @@ public class ProcessoSeletivo {
       double salarioPretendido = valorPretendido();
 
       System.out.println("O candidato " + candidato + " Solicitou este valor de salário " + salarioPretendido);
-      if(salarioBase >= salarioPretendido ){
+      if(salarioBase >= salarioPretendido && candidatoAtual < candidatos.length){
         System.out.println("O candidato " + candidato + " foi selecionado para a vaga");
         candidatosSelecionados++;
       }else{
