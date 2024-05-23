@@ -12,7 +12,7 @@ public class ProcessoSeletivo {
     String [] candidatos = {"Phillipe", "Marcos", "Luiz", "Fernando", "Pedro", "Arthur", "Gabriel", "João", "Diniz", "Cardoso"} ;
     System.out.println("Imprimindo a lista de candidatos informando o indece do elemento");
     for(int indice = 0; indice <= candidatos.length; indice++){
-      System.out.println("O candidato de numero " + indice + " é " + candidatos[indice]);
+      System.out.println("O candidato de numero " + (indice+1) + " é " + candidatos[indice]);
     }
   }
 
