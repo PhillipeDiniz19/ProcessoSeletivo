@@ -8,12 +8,21 @@ public class ProcessoSeletivo {
     imprimirSelecionados(); 
   }
 
+// função criada para pegar os candidatos e imprimir todos eles.
   static void imprimirSelecionados(){
     String [] candidatos = {"Phillipe", "Marcos", "Luiz", "Fernando", "Pedro", "Arthur", "Gabriel", "João", "Diniz", "Cardoso"} ;
+    
     System.out.println("Imprimindo a lista de candidatos informando o indece do elemento");
     for(int indice = 0; indice <= candidatos.length; indice++){
       System.out.println("O candidato de numero " + (indice+1) + " é " + candidatos[indice]);
     }
+
+    System.out.println("Forma abreviada de interação for each");
+
+    for(String candidato: candidatos){
+      System.out.println("O candidato selecionado foi " + candidato);
+    }
+
   }
 
 // Função para seleção de candidato 
@@ -43,6 +52,7 @@ public class ProcessoSeletivo {
     return ThreadLocalRandom.current().nextDouble(1800, 2200);
   }
 
+//Função criada para pegar o salario e analisar se ele é apto ou não.
   static void analisarCandidato(double salarioPretendido){
     double salarioBase = 2000.0;
     if(salarioBase > salarioPretendido){
@@ -53,4 +63,6 @@ public class ProcessoSeletivo {
       System.out.println("LIGAR PARA O CANDIDATO COM CONTRA PROPOSTA");
     }
   }
+
+  
 }
